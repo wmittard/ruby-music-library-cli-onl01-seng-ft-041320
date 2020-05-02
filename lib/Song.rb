@@ -2,7 +2,7 @@ require 'pry'
 class Song 
 
   
-  attr_accessor :name
+  attr_accessor :name, :musicimporter, :musiclibrarycontroller
   attr_reader :artist, :genre 
   extend Concerns::Findable
   
