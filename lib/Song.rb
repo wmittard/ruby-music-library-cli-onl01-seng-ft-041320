@@ -52,12 +52,9 @@ class Song
 end
  
 def self.find_or_create_by_name(name)
-     if Song.all.length = 2 
-       self.find_by_name(name) || self.create(name)
-     else 
-       nil
-     end 
-   end 
+    self.find_by_name(name) || self.create(name)
+  end 
+  
 
   def self.all 
     @@all 
