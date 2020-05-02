@@ -1,5 +1,4 @@
-module Concerns
-  module Findable
+module Concerns::Findable
   attr_accessor :name
   
   @@all = [] 
