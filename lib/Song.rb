@@ -67,8 +67,8 @@ end
     artist_name = array[0]
     genre_name = array[2].split(".mp3").join
 
-    artist = Artist.find_or_create_by_name(name)
-    genre = Genre.find_or_create_by_name(name)
+    artist = Artist.find_or_create_by_name(artist_name)
+    genre = Genre.find_or_create_by_name(genre_name)
     self.new(song_name, artist, genre)
   end
 
