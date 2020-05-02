@@ -1,4 +1,6 @@
+require 'pry'
 class Song 
+
   
   attr_accessor :name
   attr_reader :artist, :genre 
@@ -51,6 +53,7 @@ end
  
 def self.find_or_create_by_name(name)
    self.find_by_name(name) || self.create(self)
+   binding.pry
 end
 
     
