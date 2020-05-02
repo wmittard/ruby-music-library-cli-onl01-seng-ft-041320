@@ -3,7 +3,7 @@ module Concerns::Findable
   
   @@all = []
   
-  def intialize(name)
+  def initialize(name)
     @name = name 
     @@all << self
   end 
