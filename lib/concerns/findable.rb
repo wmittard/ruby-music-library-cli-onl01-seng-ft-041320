@@ -14,7 +14,7 @@ module Concerns
   end
   
   def find_by_name(name)
-  
+   @@all.detect {|find| find.name == name}
     end 
     
     def find_or_create_by_name(name)
